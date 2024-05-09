@@ -81,7 +81,7 @@ nav{
 
 .rightMC{
     width: 50%;
-    border: 1px solid white;
+    border: 1px solid #F2F2EF;
     border-top: none;
     border-right: none;
     border-bottom: none;
@@ -103,4 +103,44 @@ nav{
 
 #arrowMC{
     width: 10%;
+}
+
+
+/* Featured products */
+
+.grid-container {
+    display: grid;
+    background-color: #F2F2EF;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #424438;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #424438;
+
+  }
+
+  .grid-item:nth-child(4) {
+    grid-column: 2;
+  }
+
+
+  .productImage{
+    position: relative;
+    width:15vw;
+  }
+
+  .Product-Category{
+    text-align: start;
+    color: #A8B39D;
+    font-size: 1vw;
+  }
+
+
+.Product-Name{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2VW;
 }
