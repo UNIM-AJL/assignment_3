@@ -98,11 +98,12 @@ nav{
 .ViewCollectionButton{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding-top: 5vw;
+    justify-content: space-between;
     font-size: 2vw;
     text-decoration: none;
     color: #F2F2EF;
+    cursor: pointer;
 }
 
 #arrowMC{
@@ -166,3 +167,65 @@ nav{
     align-items: end;
 }
 
+/* Our story section */
+
+.ourStory{
+    background-color: #909987;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    display: flex;
+    border-bottom: 1px solid #424438;
+}
+
+.leftOS{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+#ourStoryIMG{
+    width: 100%;
+}
+
+#ourStoryTitle{
+    font-size: 12vw;
+    color: #424438;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ViewMoreButton{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-top: 5vw;
+}
+
+.ViewStoryButton{
+    font-size: 2vw;
+    text-decoration: none;
+    color: #F2F2EF;
+    cursor: pointer;
+}
+
+
+.rightOS{
+    width: 40%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+
+
+.OSinfo{
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1.8vw;
+    padding-top: 3vw;
+    color: #F2F2EF;
+}
+
+/* bottom info section*/
