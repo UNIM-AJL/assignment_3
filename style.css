@@ -8,6 +8,7 @@
 
 body{
     background-color: #F2F2EF;
+    overflow-x: hidden;
 }
 
 /* Nav bar */
@@ -229,3 +230,100 @@ a{
 }
 
 /* bottom info section*/
+
+.BottomInfo{
+    color:#424438;
+    padding: 3vw;
+    display: flex;
+
+}
+
+.leftIS{
+    width: 50%;
+
+}
+
+.BI-links{
+    display: flex;
+    font-size: 1.5vw;
+    padding-bottom: 3vw;
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#upwards-arrow{
+    width: 2%;
+    left: 2vw;
+}
+
+
+#membershipInfo{
+    font-size: 1vw;
+    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+
+#ACA-logo{
+    width: 7vw;
+    padding-top: .5vw;
+}
+
+
+.rightIS{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+}
+
+.locationInfo{
+    display: flex;
+    align-items: start;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+#locationIMG{
+    width: 1.5vw;
+    display: flex;
+    align-items: center;
+    padding-right: 1vw;
+}
+
+
+.socials{
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+.socialsLogos{
+    width: 5vw;
+    padding-right: 1vw;
+
+}
+
+#socialsCaption{
+    font-size: 3vw;
+    padding-bottom: 2vw;
+    text-align: center;
+}
+
+
+.BottomBar{
+    background-color:#424438;
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding: 1vw;
+    padding-left: 3vw;
+    color: #F2F2EF;
+}
+
+#BottomBarInfo{
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
