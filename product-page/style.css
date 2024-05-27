@@ -214,7 +214,7 @@
 
 
 
-  /* left side */
+  /* Product page - Product Images  */
 
 
   .container{
@@ -261,7 +261,7 @@
 
 
 
-/* right side */
+/* Product Page - Product information */
 
   .right-side{
     /* background-color: red; */
@@ -303,4 +303,30 @@
     text-transform: uppercase;
     color: #A8B39D;
     font-size: 2vw;
+  }
+
+
+  .product-info{
+    color: #424438;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    padding-left: 1vw;
+    font-size: 1vw;
+    border-bottom: 1px solid #424438;
+    width: 90%;
+  }
+
+
+  .product-measurements{
+    padding-top: 2vh;
+  }
+
+  .product-measurements p{
+    font-size: 1vw;
+    font-weight: 100;
+  }
+
+
+  #product-info-caution{
+    padding-top: 2vh;
   }
