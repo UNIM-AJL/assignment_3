@@ -222,8 +222,7 @@
     flex-wrap: wrap;
     overflow-x: hidden;
     width: 100%;
-    position: absolute;
-    top: 20%;
+    padding-bottom: 5vw;
   }
 
   .left-side{
@@ -395,6 +394,7 @@
     padding: 1vw;
     font-size: 2vw;
     cursor: pointer;
+
 }
 
 
@@ -522,3 +522,33 @@
 
 
 }
+
+/* footer */
+
+footer{
+   border-top: 1px solid #424438;
+   width: 100%;
+   display: flex;
+}
+
+.footer-menu{
+    padding: 2.3vw;
+}
+
+.footer-menu ul li{
+    list-style: none;
+    padding-bottom: 1vw;
+    font-size: 1.5vw;
+    
+}
+
+.footer-menu a{
+    color: #424438;
+    text-decoration: none;
+    
+}
+
+.footer-menu img{
+    padding-left: .2vw;
+    width: 1vw;
+} 
