@@ -233,3 +233,41 @@ header .search{
   padding-top: 15vh;
   padding-bottom: 5vh;
 }
+
+
+/* Product filter and sort buttons */
+
+.product-list-modifier{
+  display: flex;
+  color: #424438;
+  font-size: 1vw;
+}
+
+
+.filterBtn{
+  width: 50%;
+  border-bottom:1px solid #424438;
+  border-left:1px solid #424438;
+  border-right:1px solid #424438;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.sortBtn{
+  width: 50%;
+  border-bottom:1px solid #424438;
+  border-right:1px solid #424438;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.modifier-arrow{
+  width: 1.5vw;
+  height: 1.5vw;
+}
