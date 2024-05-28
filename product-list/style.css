@@ -306,11 +306,11 @@ nav{
    background-color: #F2F2EF;
    border-bottom: 1px solid #424438;
    border-right: 1px solid #424438;
-   padding: 1vw;
+   padding: 1em;
    text-align: center;
    color: #424438;
    width: 25%;
-   height: 55vh;
+   height: 500px;
    display: flex;
    flex-direction: column;
    justify-content: end;
@@ -319,7 +319,7 @@ nav{
  }
 
  .productImage{
-   width:70%;
+   width: 20em;
    display: block;
    margin: auto;
  }
@@ -327,7 +327,7 @@ nav{
  .Product-Category{
    text-align: start;
    color: #A8B39D;
-   font-size: .8vw;
+   font-size: 15px;
    text-transform: uppercase;
  }
 
@@ -340,13 +340,41 @@ nav{
    text-transform: uppercase;
 }
 
+@media (max-width: 1260px){
+
+  .productImage{
+    width: 15em;
+    display: block;
+    margin: auto;
+  }
+
+
+}
+
+
 
 @media (max-width: 800px){
 
   
    .product-item {
      width: 50%;
+     height: 300px;
    }
+
+
+ .productImage{
+  width: 10em;
+}
+
+.Product-Category{
+  font-size: 0.6em;
+}
+
+.Product-Name{
+  font-size: .5em;
+}
+
+
 }
 
 
