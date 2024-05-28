@@ -37,3 +37,9 @@ hamburgerMenu.onclick = function(){
 exitButton.onclick = function(){
     dropDownMenu.classList.remove('active');
 }
+
+
+exit-button
+
+
+hamburger-menu

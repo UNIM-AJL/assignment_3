@@ -1,34 +1,39 @@
 let searchBtn = document.querySelector('.searchBtn');
 
+let searchBtnIcon = document.querySelector('.searchBtn-icon');
+
+let searchBox = document.querySelector('.search-box');
+
 let closeBtn = document.querySelector('.closeBtn');
 
-let searchBox = document.querySelector('.searchBox');
+let exitButton = document.querySelector('.exit-button');
 
-let navigation = document.querySelector('.navigation');
+let hamburgerMenu = document.querySelector('.hamburger-menu');
 
-let menuToggle = document.querySelector('.menuToggle');
+let dropDownMenu = document.querySelector('.drop-down-menu');
 
-let header = document.querySelector('header');
 
-let bag = document.querySelector('bag');
 
 
 searchBtn.onclick = function(){
     searchBox.classList.add('active');
-    closeBtn.classList.add('active');
-    searchBtn.classList.add('active');
-    menuToggle.classList.add('hide');
-    header.classList.remove('open');
-    bag.classList.add('hide');x
 }
+
 
 closeBtn.onclick = function(){
     searchBox.classList.remove('active');
     closeBtn.classList.remove('active');
-    searchBtn.classList.remove('active');
-    menuToggle.classList.remove('hide');
 }
 
-menuToggle.onclick = function(){
-    header.classList.toggle('open');
+
+searchBtnIcon.onclick = function(){
+    searchBox.classList.add('active');
+}
+
+hamburgerMenu.onclick = function(){
+    dropDownMenu.classList.add('active');
+}
+
+exitButton.onclick = function(){
+    dropDownMenu.classList.remove('active');
 }
