@@ -15,14 +15,147 @@
         <h1>Checkout</h1>
     </header>
 
-    <!-- checkout progress marker -->
+    <!-- checkout progress -->
     <section class="checkout-progress">
-        <div>
-        <div class="checkout-progress-marker-box"></div>
-        <div class="checkout-progress-marker-box"></div>
-        <div class="checkout-progress-marker-box"></div>
+        <div class="checkout-process-marker">
+            <div class="checkout-process-checkpoint">
+                <label class="checkout-process-checkpoint-label" for="">information</label>
+                <div class="checkout-progress-marker-box checkout-progress-marker-box-filled"></div>
+            </div>
+                <div class="connecting-line"></div>
+            <div class="checkout-process-checkpoint">
+                <label class="checkout-process-checkpoint-label" for="">payment</label>
+                <div class="checkout-progress-marker-box"></div>
+            </div>
+                <div class="connecting-line"></div>
+            <div class="checkout-process-checkpoint">
+                <label class="checkout-process-checkpoint-label" for="">confirmation</label>
+                <div class="checkout-progress-marker-box"></div>
+            </div>
         </div>
-
     </section>
+
+
+    <!-- checkout information container -->
+    <section class="checkout-container">
+        <section class="customer-information ">
+            <div class="contact-information customer-information-inputs">
+                <h1 class="customer-information-subheading">Contact</h1>
+                <input class="input-full-length" type="text" placeholder="Email*">
+            </div>
+
+            <div class="delivery-method customer-information-inputs">
+                <h1 class="customer-information-subheading">Delivery</h1>
+                <form>
+                    <div class="radio-button-background">
+                        <div>
+                            <input class="ship-order" type="radio" id="Ship" name="delivery-method" value="ship">
+                            <label for="Ship">Ship</label>
+                        </div>
+                        <img class="ship-icon" src="../assets/icons/delieveryIcon.png" alt="">
+                    </div>
+                    <div class="radio-button-background">
+                        <div>
+                            <input class="pickup-order" type="radio" id="Pickup" name="delivery-method" value="pickup">
+                            <label for="Pickup">Pickup</label>
+                        </div>
+                        <img class="pickup-icon" src="../assets/icons/pickupIcon.png" alt="">
+                    </div>
+                </form>
+            </div>
+
+            <div>
+                <form class="customer-personal-information">
+                    <div class="customer-information-spacing">
+                        <input class="input-full-length" type="text" placeholder="Country*">
+                    </div>
+                    <div class="customer-name-information customer-information-spacing">
+                        <input class="input-half-length" type="text" placeholder="First Name*">
+                        <input class="input-half-length" type="text" placeholder="Last Name*">
+                    </div>
+                    <div class="customer-information-spacing">
+                        <input class="input-full-length" type="text" placeholder="Address*">
+                    </div>
+                    <div class="customer-information-spacing">
+                        <input class="input-full-length" type="text" placeholder="Apartment, suit, etc. (optional)">
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="customer-information-bottom-section">
+                <div class="customer-region-information customer-information-spacing">
+                    <input class="input-thirds-length" type="text" placeholder="City*">
+                    <input class="input-thirds-length" type="text" placeholder="State*">
+                    <input class="input-thirds-length" type="text" placeholder="Postcode*">
+                </div>
+                <div class="customer-information-spacing">
+                    <input class="input-full-length" type="text" placeholder="Phone Number*">
+                </div>
+            </div>
+
+
+            <div class="shipping-method">
+                <h1 class="customer-information-subheading">Delivery</h1>
+                <form>
+                    <div class="radio-button-background">
+                        <div>
+                            <input class="standard-shipping" type="radio" id="standard" name="shipping-method" value="standard">
+                            <label for="Ship">Parcel shipping</label>
+                        </div>
+                        <span>$30.50</span>
+                    </div>
+                    <div class="radio-button-background">
+                        <div>
+                            <input class="express-shipping" type="radio" id="express" name="shipping-method" value="express">
+                            <label for="Pickup">Express shipping</label>
+                        </div>
+                        <span>$50.75</span>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Purchase information -->
+        <section class="purchase-information">
+            <div class="bag-hidden">
+                <span>Bag</span>
+                <img class="expand-bag" src="../assets/icons/proceedArrow.png" alt="">
+            </div>
+            <section class="bag-section">
+                <div class="bag-row">
+                    <div class="bag-product">
+                        <img class="bag-product-image" src="../assets/Images/BlueVase.png" alt="">
+                        <div class="bag-product-information">
+                            <span class="bag-product-name">lynx</span>
+                            <span class="bag-product-category">Midnight collection</span>
+                        </div>
+                    </div>
+                    <div class="bag-quantity">
+                        <input class="bag-quantity-input" type="number" value="1" min="1">
+                        <button class="remove-btn" type="button">remove</button>
+                    </div>
+                    <span class="bag-price">$80</span>
+                </div>
+            </section>
+
+            <section class="order-total">
+                <div class="bag-total">
+                    <span class="bag-total-header">Subtotal</span>
+                    <span class="bag-total-price">$80</span>
+                </div>
+                <div class="shipping-total">
+                    <span class="shipping-total-header">Shipping</span>
+                    <span class="shipping-total-price">$80</span>
+                </div>
+                <div class="total-cost">
+                    <span class="total-cost-header">Total</span>
+                    <span class="total-cost-price">$80</span>
+                </div>
+            </section>
+        </section>
+    </section>
+
 </body>
 </html>
