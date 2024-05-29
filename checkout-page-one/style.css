@@ -1,0 +1,57 @@
+*{
+    font-family: "field-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background-color:#F2F2EF;
+    overflow-x: hidden;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3vw;
+
+}
+
+header h1{    
+    text-align: center;
+    color: #424438;
+    font-size: 5em;
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+
+.return-button img{
+    rotate: 180deg;
+    width: 2rem;
+    position: relative;
+}
+
+/* checkout progress marker */
+
+.checkout-progress{
+    width: 100%;
+}
+
+.checkout-progress-marker-box{
+    width: 4rem;
+    height: 4rem;
+    background-color: #424438;
+    border: 1px solid #424438;
+}
