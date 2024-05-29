@@ -192,6 +192,7 @@ nav{
         justify-content: space-between;
         width: 100%;
         padding: 5px;
+        height: 100%;
     }
 
     .nav-icons{
@@ -330,6 +331,7 @@ nav{
     border: none;
     text-transform: uppercase;
     padding-left: 1rem;
+    cursor: pointer;
 }
 
 .remove-btn:hover {
@@ -344,11 +346,43 @@ nav{
     justify-content: end;
     color: #424438;
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 200;
+}
+
+
+.bag-total{
+    text-transform: uppercase;
+    color: #424438;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+
+.bag-total-header{
+    font-size: 2em;
+}
+
+
+.bag-total-price{
+    font-size: 2em;
+    font-weight: 200;
 }
 
 
 
+.checkout-button button{
+    color: #F2F2EF;
+    background-color: #424438;
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    font-size: 2em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
 
 
 @media (max-width: 800px){
