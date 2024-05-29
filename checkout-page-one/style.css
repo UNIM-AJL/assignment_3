@@ -497,12 +497,42 @@ header h1{
         }
 
 
-    .bag-hidden{
-        display: block;
-        display: flex;
-        justify-content: space-between;
-        padding: 1vw;
-    }
-    
+        .bag-hidden{
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1vw;
+            border-bottom: 1px solid #424438;
+            cursor: pointer;
+        }
+
+        .bag-hidden span{
+            font-size: 1.5em;
+            color: #424438;
+            font-weight: 400;
+        }
+        
+        .expand-bag{
+            width: .8em;
+        }
+        .minimise-bag{
+            display: none;
+            width: .8em;
+            rotate: 90deg;
+        }
+        
+        .minimise-bag.active{
+            display: block;
+            width: .8em;
+            rotate: 90deg;
+        }
+        .expand-bag.active{
+            display: none;
+        }
+
+        .bag-section.active{
+            display: block;
+        }
 
     }
