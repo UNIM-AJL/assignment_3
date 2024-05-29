@@ -162,7 +162,7 @@ header h1{
 
 
 .input-full-length{
-    color: #909987;
+    color: #424438;
     background-color: #F2F2EF;
     border: none;
     width: 100%;
@@ -205,7 +205,7 @@ header h1{
 
 
 .input-half-length{
-    color: #909987;
+    color: #424438;
     background-color: #F2F2EF;
     border: none;
     width: 45%;
@@ -233,7 +233,7 @@ header h1{
 }
 
 .input-thirds-length{
-    color: #909987;
+    color: #424438;
     background-color: #F2F2EF;
     border: none;
     width: 30%;
@@ -243,6 +243,25 @@ header h1{
     padding-bottom: .1rem;
     font-weight: 200;
 }
+
+::placeholder{
+    color: #909987;
+}
+
+.input-full-length:focus {
+    outline: none;
+}
+
+
+.input-half-length:focus {
+    outline: none;
+}
+
+.input-thirds-length:focus {
+    outline: none;
+}
+
+
 
 .customer-information-bottom-section{
     padding-top: 5rem;

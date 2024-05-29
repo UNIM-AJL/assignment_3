@@ -139,126 +139,87 @@ header h1{
     padding: 5vw;
 }
 
-.customer-information{
+/* payment information */
+
+.payment-information{
     width: 48%;
 }
 
-
-
-
-
-.customer-information-inputs{
-    padding-bottom: 3rem;
-}
-
-
-.customer-information-subheading{
-    font-size: 1.5em;
-    color: #424438;
-    font-weight: 500;
-    padding-bottom: 2rem;
-
-}
-
-
-.input-full-length{
-    color: #909987;
-    background-color: #F2F2EF;
-    border: none;
+.payment-method-background{
     width: 100%;
-    font-size: 1.2em;
-    border-bottom: 1px solid #424438;
-    padding-left: .5rem;
-    padding-bottom: .1rem;
-    font-weight: 200;
-}
-
-
-
-.radio-button-background{
-    color: #424438;
-    padding: 1vw;
     border: 1px solid #424438;
     margin:-1px;
+    color: #424438;
+    padding: 1vw;
     display: flex;
     justify-content: space-between;
-    align-self: center;
+    align-self: end;
+    font-size: 1.5em;
+    height: 4rem;
 }
 
-.radio-button-background input{
+
+.payment-method-background input{
     accent-color: #424438;
     background-color: #F2F2EF;
     color: #F2F2EF;
 }
 
-
-
-.ship-icon{
-    height: auto;
-    width: 1rem;
-}
-
-.pickup-icon{
-    width: 1rem;
+.payment-icon{
+    width: 2rem;
     height: auto;
 }
 
+.credit-card-details-form{
+    border: 1px solid #424438;
+    margin:-1px;    
+    padding: 1vw;
+    width: 100%;
+    display: none;
+}
 
-.input-half-length{
-    color: #909987;
-    background-color: #F2F2EF;
+
+.credit-card-details-form.active{
+    display: block;
+}
+
+
+.input-full-length{
+    color: #424438;
+    background-color: transparent;
     border: none;
-    width: 45%;
+    width: 100%;
     font-size: 1.2em;
     border-bottom: 1px solid #424438;
-    padding-left: .5rem;
-    padding-bottom: .1rem;
     font-weight: 200;
 }
 
-.customer-name-information{
-    display: flex;
-    justify-content: space-between;
+.input-full-length:focus {
+    outline: none;
 }
 
-.customer-information-spacing{
+::placeholder{
+    color: #909987;
+}
+
+.card-details-spacing{
     padding-bottom: 2rem;
-
 }
 
-
-.customer-region-information{
-    display: flex;
-    justify-content: space-between;
-}
-
-.input-thirds-length{
-    color: #909987;
-    background-color: #F2F2EF;
-    border: none;
-    width: 30%;
-    font-size: 1.2em;
-    border-bottom: 1px solid #424438;
-    padding-left: .5rem;
-    padding-bottom: .1rem;
-    font-weight: 200;
-}
-
-.customer-information-bottom-section{
-    padding-top: 5rem;
-}
-
-
-.radio-button-background span{
+.billing-address label{
     font-size: 1em;
-    font-weight: 200;
+    font-weight: 100;
 }
 
-@media (max-width: 800px){
-    .customer-information{
-        width: 100%;
-    }
+
+.billing-address input{
+    accent-color:#424438;
+    mix-blend-mode: multiply;
 }
+
+
+
+
 
 
 
