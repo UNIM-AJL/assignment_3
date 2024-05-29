@@ -6,6 +6,7 @@
     <title>Bag</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/jsy0dvh.css">
+    <script src="script.js" async></script>
 </head>
 <body>
     <!-- Nav bar -->
@@ -67,29 +68,56 @@
         <h1>Bag</h1>
     </section>
 
-    <!--cart container-->
-    <section class="bag-container">
-        <div class="bag-row">
-            <span class="cart-item cart-header cart-column">ITEM</span>
-            <span class="cart-price cart-header cart-column">PRICE</span>
-            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+
+    <section class="bag-section">
+        <div class="bag-header">
+            <span>product</span>
+            <span>quantity</span>
+            <span>price</span>
         </div>
-        <div class="bag-items">
-            <div class="bag-row">
-                <div class="bag-item bag-column">
-                    <img class="bag-item-image" src="Images/Shirt.png" width="100" height="100">
-                    <span class="bag-item-title">T-Shirt</span>
-                </div>
-                <span class="bag-price bag-column">$19.99</span>
-                <div class="bag-quantity bag-column">
-                    <input class="bag-quantity-input" type="number" value="1">
-                    <button class="btn btn-danger" type="button">REMOVE</button>
+
+        <div class="bag-row">
+            <div class="bag-product">
+                <img class="bag-product-image" src="../assets/Images/BlueVase.png" alt="">
+                <div class="bag-product-information">
+                    <span class="bag-product-name">lynx</span>
+                    <span class="bag-product-category">Midnight collection</span>
                 </div>
             </div>
+
+            <div class="bag-quantity">
+                <input class="bag-quantity-input" type="number" value="1" min="1">
+                <button class="remove-btn" type="button">remove</button>
+            </div>
+
+            <span class="bag-price">$19.99</span>
+
+        </div>
     </section>
 
 
 
-    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
