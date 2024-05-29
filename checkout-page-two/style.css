@@ -217,7 +217,21 @@ header h1{
     mix-blend-mode: multiply;
 }
 
+@media (max-width: 800px){
+    .payment-information{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
 
+    .payment-method-background{
+        height: 4rem;
+    }
+    
+    .credit-card-details-form{  
+        padding: 7vw;
+    }
+
+}
 
 
 
@@ -233,6 +247,7 @@ header h1{
     width: 48%;
     border: 1px solid #424438;
     padding: 3vw;
+    margin:-1px;    
     display: flex;
     flex-direction: column;
     justify-content: space-between;

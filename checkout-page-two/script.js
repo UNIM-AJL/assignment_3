@@ -1,3 +1,5 @@
+// bag drop down functions
+
 let bagHidden = document.querySelector('.bag-hidden');
 
 let bagSection = document.querySelector('.bag-section');
@@ -22,6 +24,7 @@ minimiseBag.onclick = function(){
 
 
 
+// credit card details drop down 
 
 let creditCard = document.querySelector('.credit-card')
 
