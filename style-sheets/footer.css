@@ -1,0 +1,203 @@
+*{
+    font-family: "field-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background-color:#F2F2EF;
+    overflow-x: hidden;
+}
+
+
+
+/* footer */
+
+footer{
+    border-top: 1px solid #424438;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.3vw;
+ }
+ 
+ .footer-menu{
+     width: 33.33%;
+ }
+ 
+ .footer-menu ul li{
+     list-style: none;
+     padding-bottom: 1vw;
+     font-size: 1.5vw;
+     
+ }
+ 
+ .footer-menu a{
+     color: #424438;
+     text-decoration: none;
+     
+ }
+ 
+ .footer-menu img{
+     padding-left: .2vw;
+     width: 1vw;
+ } 
+ 
+ 
+ .socials{
+     text-align: center;
+     color: #424438;
+     width: 33.33%;
+     font-size: 1.5vw;
+ }
+ 
+ .socials-icons img{
+     width: 5vw;
+     text-decoration: none;
+     padding-top: 1vw;
+     cursor: pointer;
+ }
+ 
+ 
+ .footer-extra-info{
+     width: 33.33%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: end;
+ 
+ }
+ 
+ 
+ .location{
+     display: flex;
+     align-items: center;
+     color: #424438;
+     font-size: 1vw;
+     /* float: right; */
+ }
+ 
+ .location img{
+     width: 1vw;
+ }
+ 
+ .membership{
+     display: flex;
+     flex-direction: column;
+     align-items: end;
+     text-align: end;
+     width: 80%;
+ }
+ 
+ .membership img{
+     width: 3vw;
+     height: auto;
+ }
+ 
+ .membership p{
+     font-size: 1vw;
+     font-weight: 100;
+ }
+ 
+ 
+ 
+ .footer-copyright{
+     width: 100%;
+     padding: 1vw;
+     padding-left: 2.3vw;
+     color: #F2F2EF;
+     background-color: #424438;
+     font-size: 1vw;
+ }
+ 
+ 
+ @media (max-width: 800px){
+ 
+     footer {
+         flex-direction: column;
+         padding: 5vw;
+     }
+     .footer-menu{
+         width: 100%;
+     }
+     
+     .footer-menu ul li{
+         list-style: none;
+         padding-bottom: 1vw;
+         font-size: 5vw;
+         
+     }
+     .footer-menu img{
+         width: 3vw;
+     } 
+ 
+ 
+     .footer-extra-info{
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: start;
+     
+     }
+ 
+     .socials{
+         padding-top: 5vw;
+         text-align: start;
+         width: 100%;
+         font-size: 4vw;
+         padding-bottom: 5vw;
+     }
+     
+     .socials-icons img{
+         width: 10vw;
+         padding-top: 1vw;
+     }
+ 
+ 
+     .location{
+         display: flex;
+         color: #424438;
+         font-size: 3vw;
+         white-space: nowrap;
+         padding-bottom: 5vw;
+     }
+     
+     .location img{
+         width: 3vw;
+     }
+     
+     .membership{
+         display: flex;
+         flex-direction: column;
+         align-items: start;
+         text-align: start;
+         width: 100%;
+     }
+     
+     .membership img{
+         padding-top: 2vw;
+         width: 20vw;
+         height: auto;
+     }
+     
+     .membership p{
+         font-size: 3vw;
+         font-weight: 100;
+     }
+     
+ 
+ 
+ 
+ 
+     .footer-copyright{
+         font-size: 3vw;
+     }
+ }

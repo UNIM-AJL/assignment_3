@@ -1,22 +1,3 @@
-*{
-    font-family: "field-gothic", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-
-body{
-    background-color:#F2F2EF;
-    overflow-x: hidden;
-}
 
 
 
@@ -44,7 +25,7 @@ header h1{
     position: relative;
 }
 
-@media (max-width: 85s0px){
+@media (max-width: 800px){
     .return-button img{
         width: 1rem;
     }
@@ -102,7 +83,7 @@ header h1{
 }
 
 
-@media (max-width: 850px){
+@media (max-width: 800px){
     .checkout-process-checkpoint-label{
         font-size: .8em;
         padding-bottom: .8rem;
@@ -126,119 +107,6 @@ header h1{
     }
     
 }
-
-
-
-/* checkout information container */
-
-.checkout-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 5vw;
-}
-
-/* payment information */
-
-.payment-information{
-    width: 48%;
-}
-
-.payment-method-background{
-    width: 100%;
-    border: 1px solid #424438;
-    margin:-1px;
-    color: #424438;
-    padding: 1vw;
-    display: flex;
-    justify-content: space-between;
-    align-self: end;
-    font-size: 1.5em;
-    height: 4rem;
-}
-
-
-.payment-method-background input{
-    accent-color: #424438;
-    background-color: #F2F2EF;
-    color: #F2F2EF;
-}
-
-.payment-icon{
-    height: 1.5rem;
-    width: auto;
-}
-
-.credit-card-details-form{
-    border: 1px solid #424438;
-    margin:-1px;    
-    padding: 1vw;
-    width: 100%;
-    display: none;
-}
-
-
-.credit-card-details-form.active{
-    display: block;
-}
-
-
-.input-full-length{
-    color: #424438;
-    background-color: transparent;
-    border: none;
-    width: 100%;
-    font-size: 1.2em;
-    border-bottom: 1px solid #424438;
-    font-weight: 200;
-}
-
-.input-full-length:focus {
-    outline: none;
-}
-
-::placeholder{
-    color: #909987;
-}
-
-.card-details-spacing{
-    padding-bottom: 2rem;
-}
-
-.billing-address label{
-    font-size: 1em;
-    font-weight: 100;
-}
-
-
-.billing-address input{
-    accent-color:#424438;
-    mix-blend-mode: multiply;
-}
-
-@media (max-width: 850px){
-    .payment-information{
-        width: 100%;
-        padding-bottom: 2rem;
-    }
-
-    .payment-method-background{
-        height: 4rem;
-    }
-    
-    .credit-card-details-form{  
-        padding: 7vw;
-    }
-
-}
-
-
-
-
-
-
-
 
 
 
@@ -489,10 +357,9 @@ header h1{
 
     .next-button{
         width: 100%;
-        padding-top: 2rem;
     }
 
-    .next-button button{
+    .next-button input{
         color: #F2F2EF;
         background-color: #424438;
         width: 100%;
@@ -502,186 +369,3 @@ header h1{
         text-transform: uppercase;
         cursor: pointer;
     }
-
-
-
-
-
-
-/* footer */
-
-footer{
-    border-top: 1px solid #424438;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2.3vw;
- }
- 
- .footer-menu{
-     width: 33.33%;
- }
- 
- .footer-menu ul li{
-     list-style: none;
-     padding-bottom: 1vw;
-     font-size: 1.5vw;
-     
- }
- 
- .footer-menu a{
-     color: #424438;
-     text-decoration: none;
-     
- }
- 
- .footer-menu img{
-     padding-left: .2vw;
-     width: 1vw;
- } 
- 
- 
- .socials{
-     text-align: center;
-     color: #424438;
-     width: 33.33%;
-     font-size: 1.5vw;
- }
- 
- .socials-icons img{
-     width: 5vw;
-     text-decoration: none;
-     padding-top: 1vw;
-     cursor: pointer;
- }
- 
- 
- .footer-extra-info{
-     width: 33.33%;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     align-items: end;
- 
- }
- 
- 
- .location{
-     display: flex;
-     align-items: center;
-     color: #424438;
-     font-size: 1vw;
-     /* float: right; */
- }
- 
- .location img{
-     width: 1vw;
- }
- 
- .membership{
-     display: flex;
-     flex-direction: column;
-     align-items: end;
-     text-align: end;
-     width: 80%;
- }
- 
- .membership img{
-     width: 3vw;
-     height: auto;
- }
- 
- .membership p{
-     font-size: 1vw;
-     font-weight: 100;
- }
- 
- 
- 
- .footer-copyright{
-     width: 100%;
-     padding: 1vw;
-     padding-left: 2.3vw;
-     color: #F2F2EF;
-     background-color: #424438;
-     font-size: 1vw;
- }
- 
- 
- @media (max-width: 850px){
- 
-     footer {
-         flex-direction: column;
-         padding: 5vw;
-     }
-     .footer-menu{
-         width: 100%;
-     }
-     
-     .footer-menu ul li{
-         list-style: none;
-         padding-bottom: 1vw;
-         font-size: 5vw;
-         
-     }
-     .footer-menu img{
-         width: 3vw;
-     } 
- 
- 
-     .footer-extra-info{
-         width: 100%;
-         display: flex;
-         flex-direction: column;
-         align-items: start;
-     
-     }
- 
-     .socials{
-         padding-top: 5vw;
-         text-align: start;
-         width: 100%;
-         font-size: 4vw;
-         padding-bottom: 5vw;
-     }
-     
-     .socials-icons img{
-         width: 10vw;
-         padding-top: 1vw;
-     }
- 
- 
-     .location{
-         display: flex;
-         color: #424438;
-         font-size: 3vw;
-         white-space: nowrap;
-         padding-bottom: 5vw;
-     }
-     
-     .location img{
-         width: 3vw;
-     }
-     
-     .membership{
-         display: flex;
-         flex-direction: column;
-         align-items: start;
-         text-align: start;
-         width: 100%;
-     }
-     
-     .membership img{
-         padding-top: 2vw;
-         width: 20vw;
-         height: auto;
-     }
-     
-     .membership p{
-         font-size: 3vw;
-         font-weight: 100;
-     }
-    
-     .footer-copyright{
-         font-size: 3vw;
-     }
- }

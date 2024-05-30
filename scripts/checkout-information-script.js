@@ -1,25 +1,3 @@
-let bagHidden = document.querySelector('.bag-hidden');
-
-let bagSection = document.querySelector('.bag-section');
-
-let  expandBag = document.querySelector(' .expand-bag');
-
-let  minimiseBag = document.querySelector('.minimise-bag');
-
-bagHidden.onclick = function(){
-    bagSection.classList.add('active');
-    expandBag.classList.add('active');
-    minimiseBag.classList.add('active');
-}
-
-
-
-minimiseBag.onclick = function(){
-    bagSection.classList.remove('active');
-    expandBag.classList.remove('active');
-    minimiseBag.classList.remove('active');
-}
-
 
 // https://www.youtube.com/watch?v=x0VcigW9kN0
 
@@ -51,7 +29,7 @@ form.addEventListener('submit', function(e){
     localStorage.setItem('state', stateValue);
     localStorage.setItem('postcode', postcodeValue);
 
-    window.location.href = "../checkout-page-two/index.html";
+    window.location.href = "checkout-payment.html";
 })
 
 
