@@ -396,20 +396,6 @@ header h1{
 
 
 
-.checkout-button button{
-    color: #F2F2EF;
-    background-color: #424438;
-    width: 100%;
-    border: none;
-    padding: .5rem;
-    font-size: 2em;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-
-
-
 
 
 @media (max-width: 850px){

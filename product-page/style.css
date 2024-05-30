@@ -276,6 +276,9 @@ nav{
     font-style: normal;
     font-size: 1em;
   }
+  .breadcrumbs a:hover{
+    color: #909987;
+  }
 
   .breadcrumbs{
     padding: 1vw;
@@ -387,14 +390,20 @@ nav{
 
 .add-to-bag{
     width: 90%;
+    padding: 1vw;
+}
+
+.add-to-bag button{
     color: #F2F2EF;
+    width: 100%;
     background-color: #424438;
     border: none;
     padding: 1vw;
     font-size: 2vw;
-    cursor: pointer;
-
+    cursor:pointer
 }
+
+
 
 
 @media (max-width: 800px){
@@ -531,6 +540,7 @@ footer{
    display: flex;
    flex-wrap: wrap;
    padding: 2.3vw;
+   margin: -1px;
 }
 
 .footer-menu{

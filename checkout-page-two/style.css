@@ -44,7 +44,7 @@ header h1{
     position: relative;
 }
 
-@media (max-width: 800px){
+@media (max-width: 85s0px){
     .return-button img{
         width: 1rem;
     }
@@ -102,7 +102,7 @@ header h1{
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 850px){
     .checkout-process-checkpoint-label{
         font-size: .8em;
         padding-bottom: .8rem;
@@ -217,7 +217,7 @@ header h1{
     mix-blend-mode: multiply;
 }
 
-@media (max-width: 800px){
+@media (max-width: 850px){
     .payment-information{
         width: 100%;
         padding-bottom: 2rem;
@@ -240,6 +240,8 @@ header h1{
 
 
 
+
+
 /* Bag products*/
 
 
@@ -247,7 +249,6 @@ header h1{
     width: 48%;
     border: 1px solid #424438;
     padding: 3vw;
-    margin:-1px;    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -279,8 +280,9 @@ header h1{
 .bag-row{
     border-bottom: 1px solid #424438;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
+    align-items: end;
     padding: .5rem;
 }
 
@@ -312,51 +314,31 @@ header h1{
 
 .bag-product-category{
     font-size: .8rem;
-    white-space: nowrap; 
     color: #909987;
 }
 
 .bag-quantity{
     width: 25%;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    justify-content: start;
 }
 
-
-.bag-quantity-input{
-    width: 40px;
-    height: 30px;
-    border: 1px solid #424438;
-    background-color: #F2F2EF;
+.bag-quantity span{
     color: #424438;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-
-.remove-btn {
-    color: #424438;
-    text-decoration: underline;
-    background-color: none;
-    border: none;
     text-transform: uppercase;
-    padding-left: 1rem;
-    cursor: pointer;
-    padding-top: .5rem;
-    font-size: .6em;
+    font-size: 1em;
 }
 
-.remove-btn:hover {
-    color: #909987;
-}
+
+
+
+
 
 
 .bag-price {
     width: 33.33%;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: end;
     color: #424438;
     font-size: 2em;
@@ -366,30 +348,20 @@ header h1{
 
 
 
-.checkout-button button{
-    color: #F2F2EF;
-    background-color: #424438;
-    width: 100%;
-    border: none;
-    padding: .5rem;
-    font-size: 2em;
-    text-transform: uppercase;
-    cursor: pointer;
-}
 
 
-
-
-
-
-@media (max-width: 800px){
+@media (max-width: 850px){
     .purchase-information{
         width: 100%;
     }
 
-    .shipping-method{
-        padding-bottom: 5rem;
+    .bag-product{
+        width: 33.33%;
     }
+    .bag-quantity{
+        width: 33.33%;
+    }
+
 }
 
 
@@ -463,7 +435,7 @@ header h1{
     }
 
 
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
         .order-total{
             padding-top: 3rem;
         }
@@ -635,7 +607,7 @@ footer{
  }
  
  
- @media (max-width: 800px){
+ @media (max-width: 850px){
  
      footer {
          flex-direction: column;

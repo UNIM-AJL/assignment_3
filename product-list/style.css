@@ -318,6 +318,10 @@ nav{
    text-decoration: none;
  }
 
+ .product-item:hover{
+  border: .3rem solid #424438;
+ }
+
  .productImage{
    width: 20em;
    display: block;
@@ -386,6 +390,7 @@ footer{
   display: flex;
   flex-wrap: wrap;
   padding: 2.3vw;
+  margin: -1px;
 }
 
 .footer-menu{

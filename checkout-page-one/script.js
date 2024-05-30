@@ -51,6 +51,8 @@ form.addEventListener('submit', function(e){
     localStorage.setItem('state', stateValue);
     localStorage.setItem('postcode', postcodeValue);
 
-    window.location.href = "../checkout-page-three/index.html";
-
+    window.location.href = "../checkout-page-two/index.html";
 })
+
+
+
