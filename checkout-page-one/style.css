@@ -273,9 +273,15 @@ header h1{
     font-weight: 200;
 }
 
-@media (max-width: 800px){
+
+.shipping-method{
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 850px){
     .customer-information{
         width: 100%;
+        padding-bottom: 3rem;
     }
 }
 
@@ -322,8 +328,9 @@ header h1{
 .bag-row{
     border-bottom: 1px solid #424438;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
+    align-items: end;
     padding: .5rem;
 }
 
@@ -355,51 +362,31 @@ header h1{
 
 .bag-product-category{
     font-size: .8rem;
-    white-space: nowrap; 
     color: #909987;
 }
 
 .bag-quantity{
     width: 25%;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    justify-content: start;
 }
 
-
-.bag-quantity-input{
-    width: 40px;
-    height: 30px;
-    border: 1px solid #424438;
-    background-color: #F2F2EF;
+.bag-quantity span{
     color: #424438;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-
-.remove-btn {
-    color: #424438;
-    text-decoration: underline;
-    background-color: none;
-    border: none;
     text-transform: uppercase;
-    padding-left: 1rem;
-    cursor: pointer;
-    padding-top: .5rem;
-    font-size: .6em;
+    font-size: 1em;
 }
 
-.remove-btn:hover {
-    color: #909987;
-}
+
+
+
+
 
 
 .bag-price {
     width: 33.33%;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: end;
     color: #424438;
     font-size: 2em;
@@ -425,14 +412,18 @@ header h1{
 
 
 
-@media (max-width: 800px){
+@media (max-width: 850px){
     .purchase-information{
         width: 100%;
     }
 
-    .shipping-method{
-        padding-bottom: 5rem;
+    .bag-product{
+        width: 33.33%;
     }
+    .bag-quantity{
+        width: 33.33%;
+    }
+
 }
 
 
@@ -506,7 +497,7 @@ header h1{
     }
 
 
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
         .order-total{
             padding-top: 3rem;
         }
@@ -560,10 +551,9 @@ header h1{
 
     .next-button{
         width: 100%;
-        padding-top: 2rem;
     }
 
-    .next-button button{
+    .next-button input{
         color: #F2F2EF;
         background-color: #424438;
         width: 100%;

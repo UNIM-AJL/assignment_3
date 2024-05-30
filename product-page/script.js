@@ -37,3 +37,21 @@ hamburgerMenu.onclick = function(){
 exitButton.onclick = function(){
     dropDownMenu.classList.remove('active');
 }
+
+
+
+ 
+// https://www.youtube.com/watch?v=mq6vlYmh_AE
+
+
+function valueSender(){
+    var productName ='LYNX';
+    var productCategory ='MIDNIGHT COLLECTION';
+    var productPrice ='$80';
+
+
+    localStorage.setItem('product-name', productName);
+    localStorage.setItem('product-category', productCategory);
+    localStorage.setItem('product-price', productPrice);
+    window.location.href = "../bag/index.html";
+}

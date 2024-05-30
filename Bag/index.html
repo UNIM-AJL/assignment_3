@@ -14,7 +14,7 @@
         <a href="../index.html"><img class="long-form-logo" src="../assets/icons/LongFormLogo.png" alt=""></a>
         <div class="nav-bar">
             <ul class="nav-bar-sections">
-                <a href="product-list/index.html"><li>Shop</li></a>
+                <a href="../product-list/index.html"><li>Shop</li></a>
                 <a href="#"><li>Our Story</li></a>
                 <a href="#"><li>Customer Care</li></a>
                 <li class="searchBtn">Search</li>
@@ -76,24 +76,41 @@
             <span>price</span>
         </div>
 
-        <div class="bag-row">
-            <div class="bag-product">
-                <img class="bag-product-image" src="../assets/Images/BlueVase.png" alt="">
-                <div class="bag-product-information">
-                    <span class="bag-product-name">lynx</span>
-                    <span class="bag-product-category">Midnight collection</span>
+        <div class="bag-items">
+            <div class="bag-row">
+                <div class="bag-product">
+                    <img class="bag-product-image" src="../assets/Images/BlueVase.png" alt="">
+                    <div class="bag-product-information">
+                        <span id="product-name" class="bag-product-name">Lynx</span>
+                        <span id="product-category" class="bag-product-category">Midnight Collection</span>
+                    </div>
                 </div>
+                <div class="bag-quantity">
+                    <input class="bag-quantity-input" type="number" value="1" min="1">
+                    <button class="remove-btn" type="button">remove</button>
+                </div>
+                <span id="product-price" class="bag-price">$80</span>
             </div>
-            <div class="bag-quantity">
-                <input class="bag-quantity-input" type="number" value="1" min="1">
-                <button class="remove-btn" type="button">remove</button>
+
+            <div class="bag-row">
+                <div class="bag-product">
+                    <img class="bag-product-image" src="../assets/Images/BlueVase.png" alt="">
+                    <div class="bag-product-information">
+                        <span id="product-name" class="bag-product-name">Lynx</span>
+                        <span id="product-category" class="bag-product-category">Midnight Collection</span>
+                    </div>
+                </div>
+                <div class="bag-quantity">
+                    <input class="bag-quantity-input" type="number" value="2" min="1">
+                    <button class="remove-btn" type="button">remove</button>
+                </div>
+                <span id="product-price" class="bag-price">$80</span>
             </div>
-            <span class="bag-price">$80</span>
         </div>
 
         <div class="bag-total">
             <span class="bag-total-header">total</span>
-            <span class="bag-total-price">$80</span>
+            <span class="bag-total-price">$240</span>
         </div>
 
         <a href="../checkout-page-one/index.html" class="checkout-button"><button>checkout</button></a>
