@@ -134,11 +134,11 @@ nav{
 
 
 .drop-down-menu{
-    position: absolute;
+    position: fixed;
     top: 0%;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #F2F2EF;
     display: none;
     z-index: 99999;
@@ -217,94 +217,128 @@ nav{
 
 /* Hero Image */
 
-.heroContainer{
-    position: relative;
-    text-align: center;
-    border: .2em solid #424438;
-    border-top: none;
-    border-bottom: none;
+.hero-container{
+    background-image: url('assets/Images/HeroImage.jpg');
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F2F2EF;
 }
 
-#heroImage{
-    width: 100%;
-
+.hero-container h1{
+    font-size: 5em;
 }
 
-.centered{
-    color: white;
-    font-size: 6vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-#subetext{
+#subtext{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 3.5vw;
+    font-size: 2em ;
 }
+
+@media (max-width: 850px){
+    .hero-container h1{
+        font-size: 2em;
+    }
+
+    #subtext{
+        font-size: 1em ;
+    }
+    .hero-container{
+        background-image: url('assets/Images/HeroImage.webp');
+        background-size: cover;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
 
 
 /* Midnight Collection */
 
-.MidnightCol{
+.midnight-collection{
     background-color: #424438;
     color: white;
     display: flex;
 }
 
-.HPinfo{
+.midnight-collection-information-paragraph{
     font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 1.7vw;
+    font-size: 1em;
     padding-top: 3vw;
+    line-height: 2vw;
 }
 
-#MCimg{
-    width: 70%;
+#midnight-collection-cover-image{
+    width: 60%;
 }
 
-.leftMC{
+.midnight-collection-information{
     width: 50%;
     padding: 5vw;
 }
 
-#titleMC{
-    font-size: 10vw;
+#midnight-collection-header{
+    font-size: 7em;
 }
 
-.rightMC{
+.midnight-collection-imagery{
     width: 50%;
     border: 1px solid #F2F2EF;
     border-top: none;
     border-right: none;
     border-bottom: none;
-    padding: 5vw;
+    padding: 3vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.ViewCollectionButton{
+.view-collection-button{
     display: flex;
     align-items: center;
     padding-top: 5vw;
     justify-content: space-between;
-    font-size: 2vw;
+    font-size: 1.5em;
     text-decoration: none;
     color: #F2F2EF;
     cursor: pointer;
 }
 
-#arrowMC{
+#arrow-midnight-collection{
     width: 10%;
 }
 
 
+@media (max-width: 850px){
+    .midnight-collection-information-paragraph{
+        font-size: .7em;
+        padding-top: 3vw;
+        line-height: 4vw;
+    }
+
+    #midnight-collection-header{
+        font-size: 2em;
+    }
+
+    #midnight-collection-cover-image{
+        width: 90%;
+    }
+    .view-collection-button{
+        font-size: .6em;
+    }
+}
+
+
+
 /* Featured products */
 
-.titleOF{
+.our-favourites-header{
     color: #424438;
     font-size: 2vw;
     border: 1px solid #424438;
@@ -324,106 +358,184 @@ nav{
 
   .product-item {
     background-color: #F2F2EF;
-    border: 1px solid #424438;
-    padding: 1vw;
+    border-bottom: 1px solid #424438;
+    border-right: 1px solid #424438;
+    padding: 1em;
     text-align: center;
     color: #424438;
-    width: 40vw;
+    width: 25%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: end;
-
+    cursor: pointer;
+    text-decoration: none;
   }
-
-
-
-
+ 
+  .product-item:hover{
+   border: .3rem solid #424438;
+  }
+ 
   .productImage{
-    width:25vw;
+    width: 20em;
     display: block;
     margin: auto;
   }
-
+ 
   .Product-Category{
     text-align: start;
     color: #A8B39D;
-    font-size: 1.2vw;
+    font-size: 15px;
+    text-transform: uppercase;
   }
-
-
-.Product-Name{
+ 
+ 
+ .Product-Name{
     display: flex;
     justify-content: space-between;
-    font-size: 1.5vw;
+    font-size: 1vw;
     align-items: end;
-}
+    text-transform: uppercase;
+ }
+ 
+ @media (max-width: 1260px){
+ 
+   .productImage{
+     width: 15em;
+     display: block;
+     margin: auto;
+   }
+ 
+ 
+ }
+ 
+ 
+ 
+ @media (max-width: 800px){
+ 
+   
+    .product-item {
+      width: 50%;
+      height: 300px;
+    }
+ 
+ 
+  .productImage{
+   width: 10rem;
+ }
+ 
+ .Product-Category{
+   font-size: 0.6em;
+ }
+ 
+ .Product-Name{
+   font-size: .5em;
+ }
+ 
+ 
+ }
+ 
 
 /* Our story section */
 
-.ourStory{
+.our-story{
     background-color: #909987;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     display: flex;
     border-bottom: 1px solid #424438;
 }
 
-.leftOS{
-    width: 60vw;
+.our-story-imagery{
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: end;
 }
 
-#ourStoryIMG{
+#our-story-image{
     width: 100%;
 }
 
-#ourStoryTitle{
-    font-size: 12vw;
+#our-story-header{
+    font-size: 8em;
     color: #424438;
 }
 
-a{
-    text-decoration: none;
-}
 
-.ViewMoreButton{
+
+.view-more-button{
     display: flex;
     align-items: center;
     justify-content: end;
-    padding-top: 5vw;
+    padding-top: 2vw;
 }
 
-.ViewStoryButton{
-    font-size: 2vw;
+.our-story a{
+ text-decoration: none;
+}
+
+
+.view-story-button{
+    font-size: 1.5em;
     text-decoration: none;
     color: #F2F2EF;
     cursor: pointer;
 }
 
 
-#arrowMC2{
+#arrow-our-story{
     width: 10%;
     padding-left: 1vw;
 }
 
 
 
-.rightOS{
-    width: 40%;
-    padding-left: 5vw;
-    padding-right: 5vw;
+.our-story-information{
+    width: 50%;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 
 
-.OSinfo{
+.our-story-information-paragraph{
     font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 1.8vw;
+    font-size: 1.5em;
     padding-top: 3vw;
+    line-height: 3vw;
     color: #F2F2EF;
+}
+
+@media (max-width: 800px){
+    .our-story-information-paragraph{
+        font-size: .7em;
+        line-height: 4vw;
+    }
+    #our-story-header{
+        font-size: 2em;
+    }
+
+    .our-story-information{
+        width: 50%;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    
+    .our-story{
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .view-story-button{
+        font-size: 1em;
+        text-decoration: none;
+        color: #F2F2EF;
+        cursor: pointer;
+    }
+    
+    
 }
 
 
