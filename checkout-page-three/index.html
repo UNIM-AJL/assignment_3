@@ -25,12 +25,12 @@
                 <div class="connecting-line"></div>
             <div class="checkout-process-checkpoint">
                 <label class="checkout-process-checkpoint-label" for="">payment</label>
-                <div class="checkout-progress-marker-box checkout-progress-marker-box-filled"></div>
+                <div class="checkout-progress-marker-box"></div>
             </div>
                 <div class="connecting-line"></div>
             <div class="checkout-process-checkpoint">
                 <label class="checkout-process-checkpoint-label" for="">confirmation</label>
-                <div class="checkout-progress-marker-box"></div>
+                <div class="checkout-progress-marker-box checkout-progress-marker-box-filled"></div>
             </div>
         </div>
     </section>
@@ -39,87 +39,26 @@
     <!-- checkout information container -->
     <section class="checkout-container">
 
-          <!-- Payment information -->
-        <section class="payment-information">
-            <form>
-                <div class="payment-method-background">
-                    <div>
-                        <input class="credit-card" type="radio" name="payment-information" id="credit-card" value="credit">
-                        <label for="credit-card"> Credit card</label>
-                    </div>
-                    <div>
-                        <img class="payment-icon" src="../assets/icons/visa&mastercard.png" alt="">
-                    </div>
+          <!-- order confirmation information -->
+        <section class="order-confirmation">
+            <div class="order-confirmation-informtion">
+                <h1>Thank you for your order!</h1>
+                <img class="confirmation-tick" src="../assets/icons/tick.png" alt="">
+                <h2>Order #43877902</h2>
+                <h2>Shipping Address:</h2>
+                <span class="order-confirmation-address">18 Charles Street,</span>
+                <div>
+                    <span class="order-confirmation-address">Brunswick,</span>
+                    <span class="order-confirmation-address">Victoria,</span>
+                    <span class="order-confirmation-address">3056,</span>
                 </div>
-
-                <div class="credit-card-information">
-                    <div class="credit-card-details-form">
-                        <div class="credit-card-details-input">
-                            <div class="card-details-spacing">
-                                <input class="input-full-length" type="text" placeholder="Card Number" required="">
-                            </div>
-                            <div class="card-details-spacing">
-                                <input class="input-full-length" type="text" placeholder="Expiration Date (MM/YY)">
-                            </div>
-                            <div class="card-details-spacing">
-                                <input class="input-full-length" type="text" placeholder="Security Code">
-                            </div>
-                            <div class="card-details-spacing">
-                                <input class="input-full-length" type="text" placeholder="Name on Card">
-                            </div>
-                        </div>
-                            <div class="billing-address">
-                                <input type="checkbox">
-                                <label  for="billing address">Use shipping address for billing address</label>
-                            </div>
-                    </div>            
-                </div>
-
-
-
-
-
-                <div class="payment-method-background">
-                    <div>
-                        <input class="paypal altnerative-payment-method" type="radio" name="payment-information" id="paypal" value="paypal">
-                        <label for="paypal">Paypal</label>
-                    </div>
-                    <div>
-                        <img class="payment-icon" src="../assets/icons/payPalLogo.png" alt="">
-                    </div>
-                </div>
-
-                <div class="payment-method-background">
-                    <div>
-                        <input class="afterPay altnerative-payment-method" type="radio" name="payment-information" id="afterPay" value="afterPay">
-                        <label for="afterPay">AfterPay</label>
-                    </div>
-                    <div>
-                        <img class="payment-icon" src="../assets/icons/afterpayLogo.webp" alt="">
-                    </div>
-                </div>
-
-                <div class="payment-method-background">
-                    <div>
-                        <input class="applePay altnerative-payment-method" type="radio" name="payment-information" id="applePay" value="applePay">
-                        <label for="applePay">ApplePay</label>
-                    </div>
-                    <div>
-                        <img class="payment-icon" src="../assets/icons//applepayLogo.png" alt="">
-                    </div>
-                </div>
-
-                <div class="payment-method-background">
-                    <div>
-                        <input class="googlePay altnerative-payment-method" type="radio" name="payment-information" id="googlePay" value="googlePay">
-                        <label for="googlePay">GooglePay</label>
-                    </div>
-                    <div>
-                        <img class="payment-icon" src="../assets/icons/googlePayLogo.png" alt="">
-                    </div>
-                </div>
-            </form>
+                <span class="order-confirmation-address">Australia</span>
+            </div>
         </section>
+
+
+
+
 
 
         <!-- Purchase information -->
@@ -161,7 +100,7 @@
                 </div>
             </section>
         </section>
-    <a href="../checkout-page-three/index.html" class="next-button"><button>Confirm</button></a>
+    <a href="../index.html" class="next-button"><button>Continue Shopping</button></a>
     </section>
 
 
