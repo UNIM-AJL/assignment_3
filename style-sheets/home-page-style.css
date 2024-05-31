@@ -53,7 +53,7 @@ body{
         font-size: 1em ;
     }
     .hero-container{
-        background-image: url('assets/Images/HeroImage.webp');
+        background-image: url('../assets/Images/HeroImage.webp');
         background-size: cover;
         height: 60vh;
         display: flex;
@@ -325,9 +325,7 @@ body{
     }
 
     .our-story-information{
-        width: 50%;
-        padding-left: 4vw;
-        padding-right: 4vw;
+        display: none;
     }
     
     .our-story{
@@ -340,6 +338,9 @@ body{
         text-decoration: none;
         color: #F2F2EF;
         cursor: pointer;
+    }
+    .our-story-imagery{
+        width: 90%;
     }
     
     
