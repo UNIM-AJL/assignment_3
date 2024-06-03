@@ -32,7 +32,7 @@ form.addEventListener('submit', function(e){
     localStorage.setItem('state', stateValue);
     localStorage.setItem('postcode', postcodeValue);
 
-    window.location.href = "checkout-payment.html";
+    // window.location.href = "checkout-payment.html";
 })
 
 
@@ -67,6 +67,67 @@ standard.onclick = function(){
 express.onclick = function(){
     selectedTwo.classList.remove('active');
 }
+
+
+
+
+
+
+
+// Tutorial was used to help create this function
+// code was edit and changed to meet the demands and needs of the site 
+// https://www.youtube.com/watch?v=CYlNJpltjMM
+
+const errorMessage = document.getElementById('error')
+const phoneNumber = document.getElementById('phone-number')
+const email = document.getElementById('email')
+
+
+form.addEventListener('submit', (e)=> {
+    const errors =  [];
+
+    var emailCheck = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+    if(!email.value.match(emailCheck)){
+        errors.push("*Email  is incomplete")
+    }
+
+    if(postcode.value.length <4){
+        errors.push("*Postcode must contain 4 characters")
+    }
+
+    if(isNaN(postcode.value)){
+        errors.push("*Postcode must be a number")
+    }
+
+    if(phoneNumber.value.length != 10){
+        errors.push("*Phone number must contain 10 characters")
+    }
+
+    if(isNaN(phoneNumber.value)){
+        errors.push("*Phone Number must be a number")
+    }
+
+      if(phoneNumber.value.length != 10){
+        errors.push("*Phone number must contain 10 characters")
+    }
+
+
+
+    if (errors.length >0){
+        e.preventDefault();
+        errorMessage.toggleAttribute('hidden');
+        errorMessage.innerHTML = errors.join('|');
+    }
+
+    else{
+        window.location.href = "checkout-payment.html";
+    }
+
+
+
+
+});
 
 
 

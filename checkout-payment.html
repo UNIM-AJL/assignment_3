@@ -45,8 +45,7 @@
 
           <!-- Payment information -->
         <section class="payment-information">
-            <div id="error"></div>
-            <form>
+            <form id="form" action="checkout-confirmation.html" method="get">
                 <div class="payment-method-background">
                     <div>
                         <input class="credit-card" type="radio" name="payment-information" id="credit-card" value="credit">
@@ -61,13 +60,13 @@
                     <div class="credit-card-details-form">
                         <div class="credit-card-details-input">
                             <div class="card-details-spacing">
-                                <input id="card-number" class="input-full-length" type="text" placeholder="Card Number" required="">
+                                <input id="card-number" class="input-full-length" type="text" placeholder="Card Number" required maxlength="12">
                             </div>
                             <div class="card-details-spacing">
-                                <input id="card-number" class="input-full-length" type="text" placeholder="Expiration Date (MM/YY)" maxlength="5" required="">
+                                <input id="expiration-date" class="input-full-length" type="text" placeholder="Expiration Date (MM/YY)" maxlength="5" required>
                             </div>
                             <div class="card-details-spacing">
-                                <input id="security-code" class="input-full-length" type="text" placeholder="Security Code" maxlength="3" required="">
+                                <input id="security-code" class="input-full-length" type="text" placeholder="Security Code" maxlength="3" required>
                             </div>
                             <div class="card-details-spacing">
                                 <input id="name-on-card" class="input-full-length" type="text" placeholder="Name on Card" required="">
@@ -122,6 +121,10 @@
                     <div>
                         <img class="payment-icon" src="../assets/icons/googlePayLogo.png" alt="">
                     </div>
+                </div>
+                <div class="confirmation">
+                    <p id="error" hidden></p>
+                    <a href="checkout-confirmation.html" class="next-button"><input id="submit" type="submit" value="Next"></a>
                 </div>
             </form>
         </section>
@@ -215,7 +218,7 @@
                 </div>
             </section>
         </section>
-    <a href="checkout-confirmation.html" class="next-button"><button>Confirm</button></a>
+    
     </section>
 
 

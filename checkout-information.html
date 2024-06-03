@@ -43,7 +43,7 @@
     <!-- checkout information container -->
     <section class="checkout-container">
         <section class="customer-information ">
-        <form id="customer-information-form" action="/" method="get">
+        <form id="customer-information-form" action="submit" method="get">
             <div class="contact-information customer-information-inputs">
                 <h1 class="customer-information-subheading">Contact</h1>
                 <input id="email" class="input-full-length" type="email" placeholder="Email*" required>
@@ -90,10 +90,10 @@
                 <div class="customer-region-information customer-information-spacing">
                     <input id="city" class="input-thirds-length" type="text" placeholder="City*" required>
                     <input id="state" class="input-thirds-length" type="text" placeholder="State*" required>
-                    <input id="postcode" class="input-thirds-length" type="text" placeholder="Postcode*" required maxlength="4">
+                    <input id="postcode" class="input-thirds-length" type="text" placeholder="Postcode*"  maxlength="4">
                 </div>
                 <div class="customer-information-spacing">
-                    <input class="input-full-length" type="text" placeholder="Phone Number*" required maxlength="10">
+                    <input id="phone-number" class="input-full-length" type="text" placeholder="Phone Number*" required maxlength="10">
                 </div>
             </div>
 
@@ -114,6 +114,7 @@
                         </div>
                         <span>$50</span>
                     </div>
+                    <p id="error" hidden></p>
             </div>
             <a href="checkout-payment.html" class="next-button"><input id="submit" type="submit" value="Next"></a>
         </form>

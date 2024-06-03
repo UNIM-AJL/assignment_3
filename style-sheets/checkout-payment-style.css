@@ -147,3 +147,15 @@ body{
 }
 
 
+.confirmation{
+    padding-top: 2vw;
+}
+
+
+#error{
+    padding-bottom: 2vw;
+    font-size: 1em;
+    color: red;
+    width: 100%;
+    text-align: center;
+}
