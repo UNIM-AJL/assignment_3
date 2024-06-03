@@ -1,4 +1,7 @@
-//https://www.youtube.com/watch?v=YeFzkC2awTM&t=1350s
+
+// Tutorial was used to help create this function
+// code was edit and changed to meet the demands and needs of the site 
+// source code: https://www.youtube.com/watch?v=YeFzkC2awTM&t=1350s
 
 
 

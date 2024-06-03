@@ -1,5 +1,7 @@
 
-// https://www.youtube.com/watch?v=x0VcigW9kN0
+// Tutorial was used to help create this function
+// code was edit and changed to meet the demands and needs of the site 
+// source code: https://www.youtube.com/watch?v=x0VcigW9kN0
 
 const form = document.getElementById('customer-information-form');
 
