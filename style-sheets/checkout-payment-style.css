@@ -49,6 +49,10 @@ body{
 }
 
 
+.payment-method-background.active{
+    background-color: #D0D6C1;
+}
+
 .payment-method-background input{
     accent-color: #424438;
     background-color: #F2F2EF;

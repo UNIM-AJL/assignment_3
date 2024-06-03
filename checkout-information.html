@@ -42,7 +42,7 @@
     <!-- checkout information container -->
     <section class="checkout-container">
         <section class="customer-information ">
-        <form id="customer-information-form">
+        <form id="customer-information-form" action="/" method="get">
             <div class="contact-information customer-information-inputs">
                 <h1 class="customer-information-subheading">Contact</h1>
                 <input id="email" class="input-full-length" type="email" placeholder="Email*" required>
@@ -72,7 +72,7 @@
                         <input id="country" class="input-full-length" type="text" placeholder="Country*" required>
                     </div>
                     <div class="customer-name-information customer-information-spacing">
-                        <input id="firstName" class="input-half-length" type="text" placeholder="First Name*" required>
+                        <input id="firstName" class="input-half-length" type="text" placeholder="First Name*" >
                         <input id="lastName" class="input-half-length" type="text" placeholder="Last Name*" required>
                     </div>
                     <div class="customer-information-spacing">
@@ -89,24 +89,24 @@
                 <div class="customer-region-information customer-information-spacing">
                     <input id="city" class="input-thirds-length" type="text" placeholder="City*" required>
                     <input id="state" class="input-thirds-length" type="text" placeholder="State*" required>
-                    <input id="postcode" class="input-thirds-length" type="text" placeholder="Postcode*" required>
+                    <input id="postcode" class="input-thirds-length" type="text" placeholder="Postcode*" required maxlength="4">
                 </div>
                 <div class="customer-information-spacing">
-                    <input class="input-full-length" type="text" placeholder="Phone Number*" required>
+                    <input class="input-full-length" type="text" placeholder="Phone Number*" required maxlength="10">
                 </div>
             </div>
 
 
             <div class="shipping-method">
                 <h1 class="customer-information-subheading">Shipping Method</h1>
-                    <div class="radio-button-background">
+                    <div class="radio-button-background2">
                         <div>
                             <input class="standard-shipping" type="radio" id="standard" name="shipping-method" value="standard">
                             <label for="Ship">Parcel shipping</label>
                         </div>
                         <span>$30</span>
                     </div>
-                    <div class="radio-button-background">
+                    <div class="radio-button-background2">
                         <div>
                             <input class="express-shipping" type="radio" id="express" name="shipping-method" value="express">
                             <label for="Pickup">Express shipping</label>

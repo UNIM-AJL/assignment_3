@@ -14,6 +14,7 @@ const state  = document.getElementById('state');
 const postcode  = document.getElementById('postcode');
 
 
+
 form.addEventListener('submit', function(e){
     e.preventDefault();
 
@@ -31,6 +32,40 @@ form.addEventListener('submit', function(e){
 
     window.location.href = "checkout-payment.html";
 })
+
+
+
+let ship = document.querySelector('.ship-order');
+
+let pickUp =  document.querySelector('.pickup-order');
+
+let selected = document.querySelector('.radio-button-background')
+
+let selectedTwo = document.querySelector('.radio-button-background2')
+
+let standard = document.querySelector('.standard-shipping')
+
+let express = document.querySelector('.express-shipping')
+
+
+
+ship.onclick = function(){
+    selected.classList.add('active');
+}
+
+pickUp.onclick = function(){
+    selected.classList.remove('active');
+}
+
+
+standard.onclick = function(){
+    selectedTwo.classList.add('active');
+}
+
+express.onclick = function(){
+    selectedTwo.classList.remove('active');
+}
+
 
 
 

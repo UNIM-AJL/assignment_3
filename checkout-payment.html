@@ -44,6 +44,7 @@
 
           <!-- Payment information -->
         <section class="payment-information">
+            <div id="error"></div>
             <form>
                 <div class="payment-method-background">
                     <div>
@@ -59,16 +60,16 @@
                     <div class="credit-card-details-form">
                         <div class="credit-card-details-input">
                             <div class="card-details-spacing">
-                                <input class="input-full-length" type="text" placeholder="Card Number" required="">
+                                <input id="card-number" class="input-full-length" type="text" placeholder="Card Number" required="">
                             </div>
                             <div class="card-details-spacing">
-                                <input class="input-full-length" type="text" placeholder="Expiration Date (MM/YY)">
+                                <input id="card-number" class="input-full-length" type="text" placeholder="Expiration Date (MM/YY)" maxlength="5" required="">
                             </div>
                             <div class="card-details-spacing">
-                                <input class="input-full-length" type="text" placeholder="Security Code">
+                                <input id="security-code" class="input-full-length" type="text" placeholder="Security Code" maxlength="3" required="">
                             </div>
                             <div class="card-details-spacing">
-                                <input class="input-full-length" type="text" placeholder="Name on Card">
+                                <input id="name-on-card" class="input-full-length" type="text" placeholder="Name on Card" required="">
                             </div>
                         </div>
                             <div class="billing-address">

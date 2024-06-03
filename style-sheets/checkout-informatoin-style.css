@@ -77,6 +77,35 @@ body{
     align-self: center;
 }
 
+
+.radio-button-background2{
+    color: #424438;
+    padding: 1vw;
+    border: 1px solid #424438;
+    margin:-1px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.radio-button-background2 input{
+    accent-color: #424438;
+    background-color: #F2F2EF;
+    color: #F2F2EF;
+}
+
+
+.radio-button-background2.active{
+    background-color: #D0D6C1;
+}
+
+
+
+.radio-button-background.active{
+    background-color: #D0D6C1;
+}
+
+
 .radio-button-background input{
     accent-color: #424438;
     background-color: #F2F2EF;
