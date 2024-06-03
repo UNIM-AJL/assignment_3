@@ -108,11 +108,6 @@ form.addEventListener('submit', (e)=> {
         errors.push("*Phone Number must be a number")
     }
 
-      if(phoneNumber.value.length != 10){
-        errors.push("*Phone number must contain 10 characters")
-    }
-
-
 
     if (errors.length >0){
         e.preventDefault();

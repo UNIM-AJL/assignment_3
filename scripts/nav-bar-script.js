@@ -1,3 +1,8 @@
+// Tutorial was used to help create the nav bar
+// code was edit and changed to meet the demands and needs of the site and was used else where in the site for different purposes
+// https://www.youtube.com/watch?v=zQngLMkngQE
+
+
 let searchBtn = document.querySelector('.searchBtn');
 
 let searchBtnIcon = document.querySelector('.searchBtn-icon');
